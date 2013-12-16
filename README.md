@@ -28,13 +28,19 @@ If command arguments are passed the application will work in CLI mode supporting
 all the arguments and various types of generations to be done in sequence.
 
 PSNameGenerator [args group 1] [args group 2]...
+
 With no arguments a gui will be opened.
+
 -h /h /? show this help. Any other argument will be ignored.
+
 -d [path] The database to load for the name generator, defaults to integrated database.
 
 An args group is formed by one of these:
+
 -m Generate male names.
+
 -f Generate female names.
+
 -s Generate family names.
 
 The modifiers -m -f -s will be parsed one by one and the arguments 
@@ -44,26 +50,39 @@ This allows to generate names in the whished form and
 the amount of names which is wanted.
 
 Each modifier takes these arguments:
+
 -c [num] The amount of names to generate for this modifier,
+
          if higher than one each name will be separated by a comma.
+         
 -l [num 1] [num 2] The minimum (num 1) and maximum (num 2)
-                   length of the generated names.");
+
+                   length of the generated names.
+                   
 Note -c defaults to 1 and -l to these:
+
 Male names: 4 - 7
+
 Female names: 5 - 5
+
 Family names: 4 - 7;
 
 Examples:
+
 PSNameGenerator -m
+
 Generates one male name using default settings.
 
-PSNameGenerator -m -c 100 -l 5 10");
+PSNameGenerator -m -c 100 -l 5 10
+
 Generates 100 male name of length 5 to 10 characters.
 
 PSNameGenerator -m -s
+
 Generates a male name and a family name.
 
 PSNameGenerator -m -c 100 -l 5 10 -f -c 100 -l 8 12 -s -c 200 -l 3 10 -m -c 100
+
 Generates 100 male names of length 5 to 10, then 100 female names of
 length 8 to 12, then 200 family names of length 3 to 10 and finally
 100 male names with default settings.");
