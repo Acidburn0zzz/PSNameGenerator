@@ -51,13 +51,9 @@ the amount of names which is wanted.
 
 Each modifier takes these arguments:
 
--c [num] The amount of names to generate for this modifier,
-
-         if higher than one each name will be separated by a comma.
+-c [num] The amount of names to generate for this modifier, if higher than one each name will be separated by a comma.
          
--l [num 1] [num 2] The minimum (num 1) and maximum (num 2)
-
-                   length of the generated names.
+-l [num 1] [num 2] The minimum (num 1) and maximum (num 2) length of the generated names.
                    
 Note -c defaults to 1 and -l to these:
 
